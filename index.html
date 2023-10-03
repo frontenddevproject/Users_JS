@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="css/styles.css" type="text/css" />
+      <title>Users</title>
+   </head>
+   <body>
+      <h1>Users Data</h1>
+      <main>
+         <div class="users-data border">
+            <div class="create-user border">
+               <div class="input-div"><input type="text" id="name" required><span class="placeholder-span" >User's name</span></div>
+               <div class="input-div"><input type="text" id="age"  required><span class="placeholder-span">User's age</span></div>
+               <div class="input-div"><input type="text" id="city" required><span class="placeholder-span">User's city</span></div>
+               <button id="create">Create User</button>
+            </div>
+            <div class="search-users border">
+               <div class="input-div"><input type="text" id="search"><span>Search users</span></div>
+            </div>
+            <div class="sorted-users border">
+               <label>
+                  <input type="checkbox" id="sort-by-name">
+                  <span>Sort by name</span>
+               </label>
+               <label>
+                  <input type="checkbox" id="sort-by-age">
+                  <span>Sort by age</span>
+               </label>
+            </div>
+         </div>
+         <section id="users-section"></section>
+         
+      </main>
+      <section id="pagination"></section>
+      <script src="js/scripts.js"></script>
+   </body>
+</html>

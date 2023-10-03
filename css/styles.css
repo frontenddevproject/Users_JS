@@ -1,0 +1,150 @@
+body{
+   background: linear-gradient(90deg, #afb5be, #112d9c);
+   font-family: Arial;
+   margin: 40px;
+}
+main{
+   display: flex;
+   flex-direction: row;
+}
+.border {
+   border: 2px solid #fff;
+   border-radius: 15px;
+   box-shadow: 0 0 10px #fff;
+}
+.users-data {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 10px;
+   padding: 20px;
+   max-width:350px;  
+   margin-right: 25px;
+   height: fit-content;
+}
+.create-user{
+   display: flex;
+   flex-direction: column;
+   width: 250px;
+   gap: 15px;
+   padding:15px;
+   
+}
+.search-users{
+   padding: 15px;
+}
+.sorted-users{
+   padding: 15px 25px;
+}
+input{
+   height: 26px;
+   font-size: 20px;
+   outline: none;
+}
+.input-div{
+   position: relative;
+}
+
+.create-user input ~ span, .search-users input ~ span{
+   margin: 0;
+   padding: 2px;
+   position: absolute;
+   left: 5px;
+   top:50%;
+   transform: translateY(-50%);
+   color: gray;
+   transition: all 0.3s;
+}
+
+.create-user input:focus ~ span, .search-users input:focus ~ span{
+   position: absolute;
+   margin: 0;
+   line-height: 5px;
+   top: 0px;
+   left: 5px;
+   font-size: 12px;
+   background-color: #fff;
+   box-shadow: 0 0 5px #fff;
+}
+.focused{
+   visibility: hidden;
+   opacity: 0;
+   transition: all 0.3s;
+}
+
+#create{
+   line-height: 26px;
+   font-size: 20px;
+   cursor: pointer;
+}
+#create:hover{
+   background-color: #808080;
+
+}
+#create:active{
+   background-color: #b9b9b9;
+}
+
+#users-section{
+   display: flex;
+   flex-wrap: wrap;
+}
+.user-card{
+   position: relative;
+   background-color: #faebd7;
+   border: 1px solid #000;
+   border-radius: 20px;
+   margin: 20px 10px;
+   font-size: 20px;
+   display: grid;
+   grid-template-columns: 1fr 2fr;
+   width: 200px;
+   min-height: 150px;
+   max-height: 180px;
+   padding: 30px 15px;
+   box-shadow: 0 0 10px #000;
+   transition: all 0.3s;
+   overflow: hidden;
+}
+.user-card span{
+   margin: 5px 0;
+}
+.user-card:hover{
+   box-shadow: 0 0 10px #fff;
+}
+.deleteButton{
+   position: absolute;
+   background-color: transparent;
+   width:30px;
+   height: 30px;
+   border: 1px solid transparent;
+   border-radius: 50%;
+   font-size: 20px;
+   font-weight: 700;
+   right: 7px;
+   top:3px;
+   cursor: pointer;
+   transition: all 0.5s;
+   box-sizing: border-box;
+}
+.deleteButton:hover, .edit-user-button:hover{
+   border: 1px solid #000;
+
+}
+.edit-user-button{
+   position: absolute;
+   background: transparent;
+   cursor: pointer;
+   width:30px;
+   height: 30px;
+   text-align: center;
+   right: 60px;
+   top: 3px;
+   border: 1px solid transparent;
+   border-radius: 50%;
+   transition: all 0.5s;
+   box-sizing: border-box;
+}
+#pagination{
+   text-align: center;
+}
