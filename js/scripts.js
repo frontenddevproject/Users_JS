@@ -194,11 +194,3 @@ function groupElementsOfArray (arr, oneSetQuantity) {
    }
    return result.filter((arr) => arr.length > 0 );
  }
-
-
-//  Не получается вставить мой код: пропадает пагинация
-//  function groupElementsOfArray (arr, oneSetQuantity) {
-//    let newArr = [];
-//    while (arr.length !== 0) newArr.push(arr.splice(0, oneSetQuantity));
-//    return newArr;
-//  }
